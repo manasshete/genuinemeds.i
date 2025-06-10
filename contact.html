@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GenuineMeds.in</title>
+    <meta name="description" content="Get in touch with GenuineMeds.in for questions, feedback, or support regarding drug information and healthcare guidance.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#2563eb"/>
+                    <path d="M16 8L24 12V20C24 22.2091 20.4183 24 16 24C11.5817 24 8 22.2091 8 20V12L16 8Z" fill="white"/>
+                    <circle cx="16" cy="16" r="3" fill="#2563eb"/>
+                </svg>
+                <span class="logo-text">GenuineMeds.in</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="drugs.html" class="nav-link">Drugs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="hero-title">Get in <span class="hero-highlight">Touch</span></h1>
+                <p class="hero-description">
+                    Have questions about medications or need support? We're here to help you with reliable information and guidance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2 class="contact-section-title">Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" required class="form-select">
+                                <option value="">Select a topic</option>
+                                <option value="drug-information">Drug Information Question</option>
+                                <option value="website-feedback">Website Feedback</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="6" required class="form-textarea" placeholder="Please provide details about your question or feedback..."></textarea>
+                        </div>
+                        <div class="form-disclaimer">
+                            <p>
+                                <strong>Important:</strong> This form is not for medical emergencies. If you have a medical emergency, please call 911 or contact your healthcare provider immediately.
+                            </p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 7.5L17.5 2.5L12.5 17.5L10 10L2.5 7.5Z" fill="currentColor"/>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2 class="contact-section-title">Contact Information</h2>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-header">
+                                <div class="contact-icon contact-icon-blue">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="22,6 12,13 2,6" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h3 class="contact-card-title">Email Us</h3>
+                                    <p class="contact-card-value">info@genuinemeds.in</p>
+                                </div>
+                            </div>
+                            <p class="contact-card-description">We typically respond within 24 hours during business days.</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-header">
+                                <div class="contact-icon contact-icon-green">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 16.92V19.92C22 20.52 21.52 21 20.92 21C9.4 21 0 11.6 0 0.08C0 -0.52 0.48 -1 1.08 -1H4.08C4.68 -1 5.16 -0.52 5.16 0.08C5.16 2.08 5.44 4.04 6 5.92C6.12 6.32 6 6.76 5.72 7.04L4.12 8.64C5.32 11.24 7.76 13.68 10.36 14.88L11.96 13.28C12.24 13 12.68 12.88 13.08 13C14.96 13.56 16.92 13.84 18.92 13.84C19.52 13.84 20 14.32 20 14.92V17.92C20 18.52 19.52 19 18.92 19Z" fill="#16a34a"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h3 class="contact-card-title">Call Us</h3>
+                                    <p class="contact-card-value">+91 12345 67890</p>
+                                </div>
+                            </div>
+                            <p class="contact-card-description">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-header">
+                                <div class="contact-icon contact-icon-yellow">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.03 7.03 1 12 1S21 5.03 21 10Z" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="10" r="3" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h3 class="contact-card-title">Visit Us</h3>
+                                    <p class="contact-card-value">Mumbai, Maharashtra, India</p>
+                                </div>
+                            </div>
+                            <p class="contact-card-description">By appointment only. Please contact us to schedule a visit.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h3 class="faq-title">Frequently Asked Questions</h3>
+                        <div class="faq-card">
+                            <div class="faq-item">
+                                <h4 class="faq-question">Is the information on your site medically reviewed?</h4>
+                                <p class="faq-answer">Yes, all drug information is reviewed by licensed healthcare professionals and updated regularly.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4 class="faq-question">Can I get personalized medical advice?</h4>
+                                <p class="faq-answer">We provide general drug information only. For personalized medical advice, please consult your healthcare provider.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4 class="faq-question">How often is your information updated?</h4>
+                                <p class="faq-answer">Our database is continuously updated as new information becomes available and guidelines change.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="#2563eb"/>
+                            <path d="M16 8L24 12V20C24 22.2091 20.4183 24 16 24C11.5817 24 8 22.2091 8 20V12L16 8Z" fill="white"/>
+                            <circle cx="16" cy="16" r="3" fill="#2563eb"/>
+                        </svg>
+                        <span class="logo-text">GenuineMeds.in</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for comprehensive drug information and healthcare guidance.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="drugs.html">Drug Database</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Drug Interactions</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>Email: info@genuinemeds.in</p>
+                        <p>Phone: +91 12345 67890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GenuineMeds.in. All rights reserved.</p>
+                <p class="disclaimer">
+                    <strong>Disclaimer:</strong> This information is for educational purposes only and should not replace professional medical advice.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

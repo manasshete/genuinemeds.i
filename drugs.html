@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Database - GenuineMeds.in</title>
+    <meta name="description" content="Browse our comprehensive database of medicinal drugs with detailed information, uses, and safety guidelines.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#2563eb"/>
+                    <path d="M16 8L24 12V20C24 22.2091 20.4183 24 16 24C11.5817 24 8 22.2091 8 20V12L16 8Z" fill="white"/>
+                    <circle cx="16" cy="16" r="3" fill="#2563eb"/>
+                </svg>
+                <span class="logo-text">GenuineMeds.in</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="drugs.html" class="nav-link active">Drugs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero" style="padding: 120px 0 60px;">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="hero-title">Drug Database</h1>
+                <p class="hero-description">
+                    Search and explore our comprehensive collection of medicinal drugs with detailed information.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section style="padding: 40px 0;">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 2C13.418 2 17 5.582 17 10C17 14.418 13.418 18 9 18C4.582 18 1 14.418 1 10C1 5.582 4.582 2 9 2ZM9 16C12.314 16 15 13.314 15 10C15 6.686 12.314 4 9 4C5.686 4 3 6.686 3 10C3 13.314 5.686 16 9 16ZM19.485 18.071L15.314 13.9C14.924 13.51 14.291 13.51 13.9 13.9C13.51 14.291 13.51 14.924 13.9 15.314L18.071 19.485C18.462 19.876 19.095 19.876 19.485 19.485C19.876 19.095 19.876 18.462 19.485 18.071Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search for drugs by name, category, or condition..."
+                    autocomplete="off"
+                >
+            </div>
+            
+            <!-- Filter Options -->
+            <div class="filter-container" style="margin-top: 2rem; text-align: center;">
+                <div class="filter-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <button class="filter-btn active" data-category="all">All Drugs</button>
+                    <button class="filter-btn" data-category="pain-relief">Pain Relief</button>
+                    <button class="filter-btn" data-category="antibiotics">Antibiotics</button>
+                    <button class="filter-btn" data-category="cardiovascular">Cardiovascular</button>
+                    <button class="filter-btn" data-category="respiratory">Respiratory</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drugs Grid -->
+    <section style="padding: 40px 0 80px;">
+        <div class="container">
+            <div class="drugs-grid" id="drugsGrid">
+                <!-- Drug cards will be populated by JavaScript -->
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="noResults" class="text-center" style="display: none; padding: 4rem 0;">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto 1rem; opacity: 0.5;">
+                    <circle cx="32" cy="32" r="30" stroke="#e5e7eb" stroke-width="4"/>
+                    <path d="M22 22L42 42M42 22L22 42" stroke="#e5e7eb" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <h3 style="color: var(--text-secondary); margin-bottom: 0.5rem;">No drugs found</h3>
+                <p style="color: var(--text-light);">Try adjusting your search terms or filters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="#2563eb"/>
+                            <path d="M16 8L24 12V20C24 22.2091 20.4183 24 16 24C11.5817 24 8 22.2091 8 20V12L16 8Z" fill="white"/>
+                            <circle cx="16" cy="16" r="3" fill="#2563eb"/>
+                        </svg>
+                        <span class="logo-text">GenuineMeds.in</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for comprehensive drug information and healthcare guidance.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="drugs.html">Drug Database</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Drug Interactions</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>Email: info@genuinemeds.in</p>
+                        <p>Phone: +91 12345 67890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GenuineMeds.in. All rights reserved.</p>
+                <p class="disclaimer">
+                    <strong>Disclaimer:</strong> This information is for educational purposes only and should not replace professional medical advice.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="drugs-data.js"></script>
+</body>
+</html>
